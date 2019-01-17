@@ -32,6 +32,16 @@ html, body {
     scroll-behavior: smooth;
 }
 
+.comments-space {
+    width: 100%;
+    min-height: 50px;
+    text-align: justify;
+}
+
+.remaining-contents span {
+    display: none;
+}
+
 .nav-trans {
     transition: padding 400ms linear;
 }
@@ -62,12 +72,14 @@ html, body {
     padding: 16px 0;
     margin: 0 12px;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 16px;
     font-weight: 900;
     text-transform: uppercase;
     transition: color 0.3s,background-color 0.1s,padding 0.2s ease-in;
     color: #005daa;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
 }
 
     .nav-link::before {
@@ -96,21 +108,36 @@ html, body {
     }
 
 .nav-active {
-    color: orange !important;
+    color: #005daa !important;
+    transform-origin: left top;
+    transform: scale(1, 1);
 }
-
 
 
 .carousel-caption {
     position: absolute;
     right: 20%;
-    bottom: 100px;
+    bottom: 120px;
     left: 8%;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
     text-align: center;
+}
+
+.link-style {
+    text-decoration: none;
+    color: #5c5c5c;
+}
+
+    .link-style:hover {
+        text-decoration: none;
+        color: #5c5c5c;
+    }
+
+.fa-color {
+    color: #1f2020;
 }
 
 .carousel-control-prev {
@@ -124,6 +151,7 @@ html, body {
 }
 
 .count-setting {
+    color: #1f2020;
     top: 93.6%;
     left: 18%;
 }
@@ -146,14 +174,7 @@ html, body {
     color: #212121;
 }
 
-#home {
-    background-image: url('../../Images/main-banner.png');
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
+
 
 .nav-color {
     background-color: rgba(244,244,244,.9);
@@ -182,7 +203,7 @@ html, body {
 }
 
 .fixed-top.scrolled {
-    background-color: #00bfff;
+    background-color: #000000;
     opacity: 1;
 }
 
@@ -194,19 +215,19 @@ html, body {
 #home .navbar-light .navbar-nav .nav-link {
     color: #1e1e1e;
     text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
+    /*font-family: 'Lato', sans-serif;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 500;*/
 }
 
     #home .navbar-light .navbar-nav .nav-link.scrolled {
         background-color: transparent;
         text-decoration: none;
-        font-family: 'Lato', sans-serif;
+        /*font-family: 'Lato', sans-serif;*/
         color: #1e1e1e;
         font-size: 10px;
-        font-weight: 400;
-        font-size: 14px;
+        /*font-weight: 400;
+        font-size: 14px;*/
         transition: font-size 400ms linear;
     }
 
@@ -317,7 +338,7 @@ html, body {
 .bg-color-deep {
     background-color: #0b79cd;
     width: 100%;
-    height: auto;
+    height: 452px;
     padding: 55px 20px
 }
 
@@ -333,6 +354,7 @@ html, body {
     font-weight: 500;
     font-size: 17px;
     color: #ffffff;
+    text-align: left;
 }
 
 
@@ -419,8 +441,9 @@ html, body {
     outline: -webkit-focus-ring-color auto 0px;
 }
 
+
 .form-control:focus {
-    color: white;
+    color: #000;
     background-color: transparent;
     border-color: none;
     outline: 0;
@@ -630,7 +653,7 @@ html, body {
 }
 
 .email-input {
-    width: 260px;
+    width: 100%;
     height: 50px;
     border: 2px solid #ffffff;
     background: transparent;
@@ -692,6 +715,111 @@ html, body {
     padding: 24px 0;
     background-color: #0c5373;
 }
+
+.doc-img {
+    position: absolute;
+    left: 57%;
+    margin-top: 4.3%;
+}
+
+.navigation-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+    .navigation-link:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+
+.relative-position {
+    position: relative;
+    bottom: 22.5px;
+}
+
+.what-below {
+    line-height: 2em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #000000;
+    position: relative;
+}
+
+    .what-below:after {
+        content: ' ';
+        position: absolute;
+        display: block;
+        width: 135px;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        margin: 0 2%;
+        border: 2px solid #0b91cd;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    }
+
+.gallery-line-below {
+    line-height: 2em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #000000;
+    position: relative;
+}
+
+    .gallery-line-below:after {
+        content: ' ';
+        position: absolute;
+        display: block;
+        width: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        margin: 0 2%;
+        border: 2px solid #0b91cd;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    }
+
+.repect-below {
+    line-height: 2em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #000000;
+    position: relative;
+}
+
+    .repect-below:after {
+        content: ' ';
+        position: absolute;
+        display: block;
+        width: 153px;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        margin: 0 2%;
+        border: 2px solid #0b91cd;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    }
 /*=================== Custome Margins ===================*/
 .mt-300 {
     margin-top: 300px;
@@ -897,6 +1025,10 @@ html, body {
 .b-50 {
     bottom: 50px;
 }
+
+.b-30 {
+    bottom: 30px;
+}
 /*================ Margin-Left ===================*/
 .ml-23 {
     margin-left: 23px;
@@ -910,11 +1042,48 @@ html, body {
     padding-top: 100px;
 }
 
+.vh-100 {
+    height: 100vh;
+}
 
+.item {
+    display: inline-block;
+}
+
+.btn-load-more {
+    font-size: 22px;
+    color: #fff;
+    background-color: #0b91cd;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    width: 200px;
+    height: 65px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+    .btn-load-more:hover {
+        background-color: #0b91cd;
+    }
+
+.mail-to-style {
+    text-decoration: none;
+    color: #000000;
+}
+
+    .mail-to-style:hover {
+        text-decoration: none;
+        color: #000000;
+    }
+
+.btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: none !important;
+}
 /*=================== BRAND Section Styling =================*/
-
-
-
 /*================ Media Query ===============*/
 @media screen and (max-width: 1024px) {
 }
@@ -923,8 +1092,75 @@ html, body {
 }
 
 @media screen and (max-width: 768px) {
+    .media-mt-11-per {
+        margin-top: -11%;
+    }
+
+    .doc-img {
+        left: 64%;
+        margin-top: 50.3%;
+        right: 6%;
+    }
+
+    .media-con-setting {
+        margin-left: -83%;
+        margin-top: 39% !important;
+    }
+
+    .select-control {
+        width: 200px;
+    }
+
+    .input-control {
+        width: 200px;
+    }
+
+    .form-control {
+        width: 200px;
+    }
+
+    .media-ml-20-per {
+        margin-left: 20%;
+    }
+
+    .m-w-100 {
+        width: 100%;
+    }
+
+    .vh-100 {
+        height: 67vh;
+    }
+
+    .cons-font {
+        font-size: 16px;
+    }
+
+    .mt-70 {
+        margin-top: 0px;
+    }
+
+    .my-mt-media {
+        margin-top: 30px;
+    }
+
+    .con-font {
+        font-size: 16px;
+    }
+
+    .doc-footer {
+        font-size: 14px;
+    }
+
+    .link-font {
+        font-size: 15px;
+    }
+
+    .media-margin-top-30 {
+        margin-top: 30px;
+    }
+
     .medical-text {
-        font-size: 26px;
+        font-size: 30px;
     }
 
     .desc-font-color {
@@ -949,14 +1185,30 @@ html, body {
 
     .bg-color-light {
         padding: 35px 36px;
+        height: 300px;
+    }
+
+    .count-setting {
+        top: 94%;
+        left: 22%;
+    }
+
+    .carousel-control-next {
+        right: 57%;
     }
 
     .bg-color-deep {
         padding: 35px 36px;
+        height: 330px;
     }
 
     .bg-color-dark {
         padding: 35px 36px;
+        height: 300px;
+    }
+
+    .media-mt-load {
+        margin-top: 24px;
     }
 
     .heading-text {
@@ -1045,8 +1297,34 @@ html, body {
 }
 
 @media screen and (max-width: 414px) {
+    .email-input {
+        width: 379px;
+    }
+
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .m-w-100 {
+        width: 100%;
+    }
+
+    .count-setting {
+        left: 36%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
     .medical-text {
-        font-size: 26px;
+        font-size: 25px;
+        left: 15%;
+        margin-top: 5%;
     }
 
     .desc-font-color {
@@ -1163,12 +1441,53 @@ html, body {
 
     .media-obj-text {
         font-size: 16px;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 51%;
+        margin-top: 135%;
+        right: 6%;
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .bg-footer {
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 411px) {
+    .email-input {
+        width: 379px;
+    }
+
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .m-w-100 {
+        width: 100%;
+    }
+
+    .count-setting {
+        left: 36%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
     .medical-text {
-        font-size: 26px;
+        font-size: 25px;
+        left: 15%;
+        margin-top: 5%;
     }
 
     .desc-font-color {
@@ -1285,12 +1604,53 @@ html, body {
 
     .media-obj-text {
         font-size: 16px;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 50%;
+        margin-top: 134%;
+        right: 4%;
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .bg-footer {
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 375px) {
+    .email-input {
+        width: 343px;
+    }
+
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .m-w-100 {
+        width: 100%;
+    }
+
+    .count-setting {
+        left: 36%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
     .medical-text {
-        font-size: 26px;
+        font-size: 25px;
+        left: 15%;
+        margin-top: 5%;
     }
 
     .desc-font-color {
@@ -1407,12 +1767,53 @@ html, body {
 
     .media-obj-text {
         font-size: 16px;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 46%;
+        margin-top: 158%;
+        right: 4%;
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .bg-footer {
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 360px) {
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .email-input {
+        width: 329px;
+    }
+
+    .m-w-100 {
+        width: 100%;
+    }
+
+    .count-setting {
+        left: 36%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
     .medical-text {
-        font-size: 26px;
+        font-size: 25px;
+        left: 15%;
+        margin-top: 5%;
     }
 
     .desc-font-color {
@@ -1529,6 +1930,21 @@ html, body {
 
     .media-obj-text {
         font-size: 16px;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 48%;
+        margin-top: 168%;
+        right: 4%;
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .bg-footer {
+        font-size: 12px;
     }
 }
 
@@ -1540,19 +1956,881 @@ html, body {
 }
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
+    .carousel-control-prev {
+        top: 89%;
+        left: 3%;
+    }
+
+    .carousel-control-next {
+        top: 89%;
+        right: 62%;
+    }
+
+    .count-setting {
+        top: 89.6%;
+    }
+
+    .head-font-color {
+        font-size: 16px;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .heading-text {
+        font-size: 26px;
+    }
+
+    .bg-color-deep {
+        height: 452px;
+    }
+
+    .bg-color-dark {
+        height: 452px;
+    }
+
+    .bg-color-light {
+        height: 452px;
+    }
+
+    .main-text {
+        font-size: 24px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .what-below {
+        font-size: 30px;
+    }
+
+    .gallery-line-below {
+        font-size: 35px;
+    }
+
+    .repect-below {
+        font-size: 30px;
+    }
+
+    .respect-font {
+        font-size: 20px;
+    }
+
+    #life {
+        padding: 53px 80px;
+    }
+
+    .sub-text {
+        font-size: 22px;
+    }
+
+    .dr-line {
+        font-size: 22px;
+    }
+
+        .dr-line::before {
+            right: 0%;
+        }
+
+        .dr-line::after {
+            left: 0%;
+        }
+
+
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .cons-font {
+        font-size: 15px;
+    }
+
+    .con-font {
+        font-size: 15px;
+    }
+
+    .doc-footer {
+        font-size: 15px;
+    }
+
+    .link-font {
+        font-size: 15px;
+    }
+
+    .select-control {
+        width: 160px;
+    }
+
+    .form-control {
+        width: 165px;
+    }
+
+    .mercey-font-size {
+        font-size: 26px;
+    }
+
+
+
+    .doc-img {
+        position: absolute;
+        left: 57%;
+        margin-top: 56%;
+        right: 10%;
+    }
+
+    .media-setting {
+        margin-left: -99%;
+        margin-top: 50%;
+        width: 100%;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .media-ml-12-per {
+        margin-left: 12%;
+    }
+
+    .bg-footer {
+        font-size: 16px;
+    }
 }
+
 
 @media screen and (max-width: 740px) and (orientation: landscape) {
 }
 
 @media screen and (max-width: 736px) and (orientation: landscape) {
+    .media-setting {
+        margin-left: 0px;
+    }
+
+    .media-ml-12-per {
+        margin-left: 0%;
+    }
+
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .m-w-100 {
+        width: auto;
+    }
+
+    .count-setting {
+        left: 39%;
+        top: 90%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
+    .medical-text {
+        font-size: 42px;
+        left: 15%;
+        margin-top: 5%;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .head-font-color {
+        font-size: 14px;
+    }
+
+    .media-ml {
+        margin-left: 6%;
+    }
+
+    .mt-48 {
+        margin-top: 25px;
+    }
+
+    .mt-45 {
+        margin-top: 25px;
+    }
+
+    .bg-color-light {
+        padding: 35px 36px;
+    }
+
+    .bg-color-deep {
+        padding: 35px 36px;
+    }
+
+    .bg-color-dark {
+        padding: 35px 36px;
+    }
+
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mercey-font-size {
+        font-size: 21px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+
+    .mercey-desc-text {
+        font-size: 14px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    #life {
+        padding: 0px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 36px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .mt-65 {
+        margin-top: 34px;
+    }
+
+    .dr-line {
+        font-size: 19px;
+    }
+
+    .do-font {
+        font-size: 25px;
+    }
+
+    .mt-85 {
+        margin-top: 50px;
+    }
+
+    .doctor-font {
+        font-size: 25px;
+    }
+
+    .respect-font {
+        font-size: 16px;
+    }
+
+    .doc-name {
+        font-size: 18px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+
+    .media-obj-text {
+        font-size: 16px;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 48%;
+        margin-top: 40.5%;
+        right: 20%
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .media-margin-top-30 {
+        margin-top: 30px !important;
+    }
+
+    .media-mt-20 {
+        margin-top: 0px;
+    }
+
+    .media-mr-11 {
+        right: 11%;
+    }
+
+    .bg-footer {
+        font-size: 18px;
+    }
+
+    .bg-color-deep {
+        height: 265px;
+    }
+
+    .bg-color-dark {
+        height: 286px;
+    }
+
+    .bg-color-light {
+        height: 265px;
+    }
 }
 
 @media screen and (max-width: 731px) and (orientation: landscape) {
+
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .m-w-100 {
+        width: auto;
+    }
+
+    .count-setting {
+        left: 39%;
+        top: 88.5%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
+    .medical-text {
+        font-size: 42px;
+        left: 15%;
+        margin-top: 5%;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .head-font-color {
+        font-size: 14px;
+    }
+
+    .media-ml {
+        margin-left: 6%;
+    }
+
+    .mt-48 {
+        margin-top: 25px;
+    }
+
+    .mt-45 {
+        margin-top: 25px;
+    }
+
+    .bg-color-light {
+        padding: 35px 36px;
+    }
+
+    .bg-color-deep {
+        padding: 35px 36px;
+    }
+
+    .bg-color-dark {
+        padding: 35px 36px;
+    }
+
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mercey-font-size {
+        font-size: 21px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+
+    .mercey-desc-text {
+        font-size: 14px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    #life {
+        padding: 0px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 36px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .mt-65 {
+        margin-top: 34px;
+    }
+
+    .dr-line {
+        font-size: 19px;
+    }
+
+    .do-font {
+        font-size: 25px;
+    }
+
+    .mt-85 {
+        margin-top: 50px;
+    }
+
+    .doctor-font {
+        font-size: 25px;
+    }
+
+    .respect-font {
+        font-size: 16px;
+    }
+
+    .doc-name {
+        font-size: 18px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+
+    .media-obj-text {
+        font-size: 16px;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 57%;
+        margin-top: 54.5%;
+        right: 17%;
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .media-margin-top-30 {
+        margin-top: 30px !important;
+    }
+
+    .media-mt-20 {
+        margin-top: 0px;
+    }
+
+    .media-mr-11 {
+        right: 11%;
+    }
+
+    .bg-footer {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 667px) and (orientation: landscape) {
+    .media-setting {
+        margin-left: 0px;
+    }
+
+    .media-ml-12-per {
+        margin-left: 0%;
+    }
+
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .m-w-100 {
+        width: auto;
+    }
+
+    .count-setting {
+        left: 39%;
+        top: 88.5%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
+    .medical-text {
+        font-size: 42px;
+        left: 15%;
+        margin-top: 5%;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .head-font-color {
+        font-size: 14px;
+    }
+
+    .media-ml {
+        margin-left: 6%;
+    }
+
+    .mt-48 {
+        margin-top: 25px;
+    }
+
+    .mt-45 {
+        margin-top: 25px;
+    }
+
+    .bg-color-light {
+        padding: 35px 36px;
+    }
+
+    .bg-color-deep {
+        padding: 35px 36px;
+    }
+
+    .bg-color-dark {
+        padding: 35px 36px;
+    }
+
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mercey-font-size {
+        font-size: 21px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+
+    .mercey-desc-text {
+        font-size: 14px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    #life {
+        padding: 0px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 36px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .mt-65 {
+        margin-top: 34px;
+    }
+
+    .dr-line {
+        font-size: 19px;
+    }
+
+    .do-font {
+        font-size: 25px;
+    }
+
+    .mt-85 {
+        margin-top: 50px;
+    }
+
+    .doctor-font {
+        font-size: 25px;
+    }
+
+    .respect-font {
+        font-size: 16px;
+    }
+
+    .doc-name {
+        font-size: 18px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+
+    .media-obj-text {
+        font-size: 16px;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 53%;
+        margin-top: 54.5%;
+        right: 11%;
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .media-margin-top-30 {
+        margin-top: 30px !important;
+    }
+
+    .media-mt-20 {
+        margin-top: 0px;
+    }
+
+    .media-mr-11 {
+        right: 11%;
+    }
+
+    .bg-footer {
+        font-size: 18px;
+    }
+
+    .bg-color-deep {
+        height: 265px;
+    }
+
+    .bg-color-dark {
+        height: 286px;
+    }
+
+    .bg-color-light {
+        height: 265px;
+    }
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
+
+
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .m-w-100 {
+        width: auto;
+    }
+
+    .count-setting {
+        left: 39%;
+        top: 88.5%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
+    .medical-text {
+        font-size: 42px;
+        left: 15%;
+        margin-top: 5%;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .head-font-color {
+        font-size: 14px;
+    }
+
+    .media-ml {
+        margin-left: 6%;
+    }
+
+    .mt-48 {
+        margin-top: 25px;
+    }
+
+    .mt-45 {
+        margin-top: 25px;
+    }
+
+    .bg-color-light {
+        padding: 35px 36px;
+    }
+
+    .bg-color-deep {
+        padding: 35px 36px;
+    }
+
+    .bg-color-dark {
+        padding: 35px 36px;
+    }
+
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mercey-font-size {
+        font-size: 21px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+
+    .mercey-desc-text {
+        font-size: 14px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    #life {
+        padding: 0px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 36px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .mt-65 {
+        margin-top: 34px;
+    }
+
+    .dr-line {
+        font-size: 19px;
+    }
+
+    .do-font {
+        font-size: 25px;
+    }
+
+    .mt-85 {
+        margin-top: 50px;
+    }
+
+    .doctor-font {
+        font-size: 25px;
+    }
+
+    .respect-font {
+        font-size: 16px;
+    }
+
+    .doc-name {
+        font-size: 18px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+
+    .media-obj-text {
+        font-size: 16px;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 60%;
+        margin-top: 65.5%;
+        right: 13%;
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .media-margin-top-30 {
+        margin-top: 30px !important;
+    }
+
+    .media-mt-20 {
+        margin-top: 0px;
+    }
+
+    .media-mr-11 {
+        right: 11%;
+    }
+
+    .bg-footer {
+        font-size: 18px;
+    }
 }
