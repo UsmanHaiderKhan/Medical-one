@@ -32,6 +32,16 @@ html, body {
     scroll-behavior: smooth;
 }
 
+.bg-slide-img {
+    background-image: url('../../Images/main-banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
 .comments-space {
     width: 100%;
     min-height: 50px;
@@ -1460,6 +1470,40 @@ html, body {
 }
 
 @media screen and (max-width: 411px) {
+    .select-control {
+        width: 200px;
+    }
+
+    .form-control {
+        width: 200px;
+    }
+
+    .input-control {
+        width: 140px;
+    }
+
+    .media-ml-20-per {
+        margin-left: 0px;
+    }
+
+    .media-mt-11-per {
+        margin-top: -5%;
+    }
+
+    .media-setting {
+        margin-left: 1%;
+        margin-top: 6% !important;
+        width: 0%;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .media-ml-12-per {
+        margin-left: 0%;
+    }
+
     .email-input {
         width: 379px;
     }
@@ -1608,8 +1652,8 @@ html, body {
 
     .doc-img {
         position: absolute;
-        left: 50%;
-        margin-top: 134%;
+        left: 47%;
+        margin-top: 127%;
         right: 4%;
     }
 
@@ -1623,6 +1667,40 @@ html, body {
 }
 
 @media screen and (max-width: 375px) {
+    .select-control {
+        width: 200px;
+    }
+
+    .form-control {
+        width: 200px;
+    }
+
+    .input-control {
+        width: 140px;
+    }
+
+    .media-ml-20-per {
+        margin-left: 0px;
+    }
+
+    .media-mt-11-per {
+        margin-top: -5%;
+    }
+
+    .media-setting {
+        margin-left: 1%;
+        margin-top: 6% !important;
+        width: 0%;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .media-ml-12-per {
+        margin-left: 0%;
+    }
+
     .email-input {
         width: 343px;
     }
@@ -1786,6 +1864,42 @@ html, body {
 }
 
 @media screen and (max-width: 360px) {
+    .select-control {
+        width: 200px;
+    }
+
+    .form-control {
+        width: 200px;
+    }
+
+    .input-control {
+        width: 140px;
+    }
+
+    .media-ml-20-per {
+        margin-left: 0px;
+    }
+
+    .media-mt-11-per {
+        margin-top: -5%;
+    }
+
+    .media-setting {
+        margin-left: 1%;
+        margin-top: 6% !important;
+        width: 0%;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .media-ml-12-per {
+        margin-left: 0%;
+    }
+
+
+
     #medical-footer {
         padding: 32px 0 0 0;
     }
@@ -1811,7 +1925,7 @@ html, body {
     }
 
     .medical-text {
-        font-size: 25px;
+        font-size: 22px;
         left: 15%;
         margin-top: 5%;
     }
@@ -1935,7 +2049,7 @@ html, body {
     .doc-img {
         position: absolute;
         left: 48%;
-        margin-top: 168%;
+        margin-top: 163%;
         right: 4%;
     }
 
@@ -2663,6 +2777,39 @@ html, body {
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
 
+    .select-control {
+        width: 200px;
+    }
+
+    .form-control {
+        width: 200px;
+    }
+
+    .input-control {
+        width: 140px;
+    }
+
+    .media-ml-20-per {
+        margin-left: 0px;
+    }
+
+    .media-mt-11-per {
+        margin-top: 0px;
+    }
+
+    .media-setting {
+        margin-left: 0%;
+        margin-top: 0% !important;
+        width: 0%;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .media-ml-12-per {
+        margin-left: 0%;
+    }
 
     #medical-footer {
         padding: 32px 0 0 0;
