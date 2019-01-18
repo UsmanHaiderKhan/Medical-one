@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>OWL CAROUEL SLIDER</title>
+    <link href="Bootstrap 4/css/bootstrap.css" rel="stylesheet" />
+    <link href="Bootstrap 4/css/animate.css" rel="stylesheet" />
+    <link href="Bootstrap 4/css/JiSlider.css" rel="stylesheet" />
+    <link href="Bootstrap 4/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <section id="home-age">
+        <nav class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top nav-color nav-trans">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Images/logo.png" alt="Alternate Text" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link nav-active scroll link-padding" href="#home-age">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll link-padding" href="#con_detail">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll link-padding" href="#gallery">WORK</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll link-padding" href="#do_best">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll link-padding" href="#doctor">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="JiSlider" class="jislider">
+            <ul>
+                <li>
+                    <img src="Images/main-banner.png" class="w-100" />
+                    <div class="carousel-caption">
+                        <h1>Usman khan</h1>
+                    </div>
+                </li>
+                <li>
+                    <img src="Images/main-banner.png" class="w-100" />
+                </li>
+                <li>
+                    <img src="Images/main-banner.png" class="w-100" />
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="Bootstrap 4/js/jquery.slim.min.js"></script>
+    <script src="Bootstrap 4/js/poper.min.js"></script>
+    <script src="Bootstrap 4/js/JiSlider.js"></script>
+    <script src="Bootstrap 4/js/bootstrap.min.js"></script>
+    <script>
+        $('#JiSlider').JiSlider(function () {
+            auto: true,
+                start: 1
+
+        });
+
+    </script>
+</body>
+</html>
