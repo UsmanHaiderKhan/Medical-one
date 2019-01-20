@@ -44,13 +44,13 @@
         </div>
     </nav>
     <section id="home-age">
-        <div id="demo" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div id="demo" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="Images/main-banner.png" class="h-100" />
+                    <img src="Images/main-banner.png" />
                     <div class="carousel-caption md-mt-5 ">
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-9">
                                 <h2 class="position-relative medical-text text-shads mt-200" style="text-align: left">Medical <span class="text-white">Services That You Can </span>Trust</h2>
                                 <div class="row">
                                     <div class="col-md-8 mt-50">
@@ -77,10 +77,10 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="Images/main-banner.png" class="h-100" />
+                    <img src="Images/main-banner.png" />
                     <div class="carousel-caption md-mt-5 ">
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-9">
                                 <h2 class="position-relative medical-text text-shads mt-200" style="text-align: left">Medical <span class="text-white">Services That You Can </span>Trust</h2>
                                 <div class="row">
                                     <div class="col-md-8 mt-50">
@@ -107,10 +107,10 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="Images/main-banner.png" class="h-100" />
+                    <img src="Images/main-banner.png" />
                     <div class="carousel-caption md-mt-5 ">
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-9">
                                 <h2 class="position-relative medical-text text-shads mt-200" style="text-align: left">Medical <span class="text-white">Services That You Can </span>Trust</h2>
                                 <div class="row">
                                     <div class="col-md-8 mt-50">
@@ -137,10 +137,10 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="Images/main-banner.png" class="h-100" />
+                    <img src="Images/main-banner.png" />
                     <div class="carousel-caption md-mt-5 ">
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-9">
                                 <h2 class="position-relative medical-text text-shads mt-200" style="text-align: left">Medical <span class="text-white">Services That You Can </span>Trust</h2>
                                 <div class="row">
                                     <div class="col-md-8 mt-50">
@@ -760,7 +760,7 @@
                         <hr class="bg-white accent-2 mb-4 mt-0 d-inline-block mx-auto " style="width: 60px;height: 2px;">
                         <ul class="none-style">
                             <li class="mt-2">
-                                <a href="#home" class="link-font navigation-link">Home</a>
+                                <a href="#home-age" class="link-font navigation-link">Home</a>
                             </li>
                             <li class="mt-2">
                                 <a href="#gallery" class="link-font navigation-link">Services</a>
@@ -821,7 +821,7 @@
             $('.next1').on('click', function () {
                 var currentImg = $('.active');
                 var nextImg = currentImg.next();
-                alert(currentImg);
+
                 if (nextImg.length) {
                     currentImg.removeClass('active');
                     nextImg.addClass('active');
@@ -829,7 +829,7 @@
                     // Find the index of the image.
                     var index = images.index(nextImg);
                     $('#slide-count').text((index + 2) + ' / ' + images.length);
-                    alert(index)
+
                 }
             });
             $('.prev1').on('click', function () {
