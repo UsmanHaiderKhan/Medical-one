@@ -116,13 +116,13 @@ $(function () {
         });
 });
 /*======================= Owl Carousel =======================*/
-//$(document).ready(function () {
-//    $(window).scroll(function () {
-//        if ($(window).scrollTop() > 10) {
-//            $('.navbar-nav li a').addClass('text-white');
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 10) {
+            $('.nav-link').addClass('text-white');
 
-//        } else {
-//            $('.navbar-nav li a').removeClass('text-white');
-//        }
-//    });
-//});
+        } else {
+            $('.nav-link').removeClass('text-white');
+        }
+    });
+});
