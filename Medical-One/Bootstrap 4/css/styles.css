@@ -76,48 +76,20 @@ html, body {
     padding: 20px 0 20px;
 }
 
-/*.nav-link {
-    position: relative;
-    display: block;
-    padding: 16px 0;
-    margin: 0 12px;
-    letter-spacing: 1px;
-    font-size: 18px;
-    line-height: 16px;
-    font-weight: 900;
-    text-transform: uppercase;
-    transition: color 0.3s,background-color 0.1s,padding 0.2s ease-in;
-    color: #005daa;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-}*/
-
-/*.nav-link::before {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 3px;
-        left: 0;
-        height: 5px;
-        width: 100%;
-        text-align: center;
-        background-color: #005daa;
-        transform-origin: right top;
-        transform: scale(0, 1);
-        transition: color 0.1s,transform 0.2s ease-out;
-    }*/
 
 .nav-active {
     color: #005daa !important;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
 }
 
     .nav-active::after {
         content: "";
         background: #005daa;
         position: absolute;
-        width: 50%;
+        width: 45%;
         height: 5%;
-        left: 20px;
+        left: 30px;
         bottom: 0;
     }
 
@@ -151,7 +123,6 @@ html, body {
 
 .navbar {
     background-color: rgba(255, 255, 255, 0.702);
-    opacity: 0.702;
 }
 
     .navbar.scrolled {
@@ -160,7 +131,17 @@ html, body {
     }
 
 .nav-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
     color: #1e1e1e;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color 0.3s,background-color 0.1s,padding 0.2s ease-in;
 }
 
 .navbar-nav.scrolled {
@@ -172,7 +153,7 @@ html, body {
 .carousel-caption {
     position: absolute;
     right: 20%;
-    bottom: 300px;
+    bottom: 320px;
     left: 8%;
     z-index: 10;
     padding-top: 20px;
@@ -210,17 +191,6 @@ html, body {
     top: 95.5%;
     left: 18.5%;
 }
-
-/*.carousel-control-prev-icon:before {
-    font-family: FontAwesome;
-    content: "\f054" !important;
-}
-
-.carousel-control-next-icon:before {
-    font-family: FontAwesome;
-    content: "\f054" !important;
-}*/
-
 
 .slider-pera-text {
     font-family: 'Lato',sans-serif;
@@ -349,6 +319,8 @@ html, body {
 }
 
 .none-style {
+    margin-left: 11px;
+    text-align: left;
     list-style: none;
 }
 
@@ -597,7 +569,7 @@ html, body {
 .respect-font {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 20px;
     color: #464646;
 }
 
@@ -1045,7 +1017,7 @@ html, body {
 .pt-100 {
     padding-top: 100px;
 }
-
+/*======= Some Commen Styling ======*/
 .vh-100 {
     height: 100vh;
 }
@@ -1061,16 +1033,32 @@ html, body {
     border: 0;
     outline: 0;
     padding: 10px 20px;
-    margin: 10px;
     cursor: pointer;
     width: 200px;
     height: 65px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    -webkit-box-shadow: 5px 6px 2px -2px rgba(255,245,104,1);
+    -moz-box-shadow: 5px 6px 2px -2px rgba(255,245,104,1);
+    box-shadow: 5px 6px 2px -2px rgba(255,245,104,1);
 }
 
     .btn-load-more:hover {
         background-color: #0b91cd;
+    }
+
+.left-text {
+    text-align: left;
+}
+
+.mail-to-hos {
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+    .mail-to-hos:hover {
+        text-decoration: none;
+        color: #4a4a4a;
     }
 
 .mail-to-style {
@@ -1087,7 +1075,8 @@ html, body {
     outline: 0;
     box-shadow: none !important;
 }
-/*=================== BRAND Section Styling =================*/
+
+
 /*================ Media Query ===============*/
 
 @media screen and (max-width: 1024px) {
@@ -1320,10 +1309,29 @@ html, body {
 }
 
 @media screen and (max-width:800px) {
-}
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0;
+    }
 
-@media screen and (max-width: 768px) {
+    .nav-active::after {
+        content: "";
+        background: #005daa;
+        position: absolute;
+        width: 70%;
+        height: 5%;
+        left: 10px;
+        bottom: 0;
+    }
 
+    .nav-link {
+        font-size: 16px;
+        margin: 0 8px;
+    }
+
+    .nav-item {
+        padding: 0px;
+    }
 
     .media-mt-11-per {
         margin-top: 0%;
@@ -1529,9 +1537,252 @@ html, body {
     .media-obj-text {
         font-size: 16px;
     }
+
+    .media-slide-icons {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0;
+    }
+
+    .nav-active::after {
+        content: "";
+        background: #005daa;
+        position: absolute;
+        width: 70%;
+        height: 5%;
+        left: 10px;
+        bottom: 0;
+    }
+
+    .nav-link {
+        margin: 0 7px;
+    }
+
+    .nav-item {
+        padding: 0px;
+    }
+
+    .media-mt-11-per {
+        margin-top: 0%;
+    }
+
+    .doc-img {
+        left: 64%;
+        margin-top: 45.3%;
+        right: 6%;
+    }
+
+    .media-con-setting {
+        margin-left: -83%;
+        margin-top: 39% !important;
+    }
+
+    .select-control {
+        width: 200px;
+    }
+
+    .input-control {
+        width: 200px;
+    }
+
+    .form-control {
+        width: 200px;
+    }
+
+    .media-ml-20-per {
+        margin-left: 20%;
+    }
+
+    .m-w-100 {
+        width: 100%;
+    }
+
+
+
+    .cons-font {
+        font-size: 16px;
+    }
+
+    .mt-70 {
+        margin-top: 0px;
+    }
+
+    .my-mt-media {
+        margin-top: 30px;
+    }
+
+    .con-font {
+        font-size: 16px;
+    }
+
+    .doc-footer {
+        font-size: 14px;
+    }
+
+    .link-font {
+        font-size: 15px;
+    }
+
+    .media-margin-top-30 {
+        margin-top: 30px;
+    }
+
+    .medical-text {
+        font-size: 30px;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .head-font-color {
+        font-size: 14px;
+    }
+
+    .media-ml {
+        margin-left: 6%;
+    }
+
+    .mt-48 {
+        margin-top: 25px;
+    }
+
+    .mt-45 {
+        margin-top: 25px;
+    }
+
+    .bg-color-light {
+        padding: 35px 36px;
+        height: 300px;
+    }
+
+    .count-setting {
+        top: 95.5%;
+        left: 22%;
+    }
+
+    .carousel-control-prev {
+        left: 5%;
+    }
+
+    .carousel-control-next {
+        right: 57%;
+    }
+
+    .bg-color-deep {
+        padding: 35px 36px;
+        height: 330px;
+    }
+
+    .bg-color-dark {
+        padding: 35px 36px;
+        height: 300px;
+    }
+
+    .media-mt-load {
+        margin-top: 24px;
+    }
+
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mercey-font-size {
+        font-size: 21px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+
+    .mercey-desc-text {
+        font-size: 14px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    #life {
+        padding: 0px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 36px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .mt-65 {
+        margin-top: 34px;
+    }
+
+    .dr-line {
+        font-size: 19px;
+    }
+
+    .do-font {
+        font-size: 25px;
+    }
+
+    .mt-85 {
+        margin-top: 50px;
+    }
+
+    .doctor-font {
+        font-size: 25px;
+    }
+
+    .respect-font {
+        font-size: 16px;
+    }
+
+    .doc-name {
+        font-size: 18px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+
+    .media-obj-text {
+        font-size: 16px;
+    }
+
+    .media-slide-icons {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 414px) {
+    .nav-active::after {
+        width: 15%;
+        left: 8px;
+    }
+
     .dr-line::before {
         right: 86%;
     }
@@ -1603,8 +1854,16 @@ html, body {
         right: 33%
     }
 
+    .media-width {
+        width: 85px !important;
+    }
+
+    .carousel-caption {
+        bottom: 250px;
+    }
+
     .medical-text {
-        font-size: 26px;
+        font-size: 40px;
         left: 15%;
         margin-top: 5%;
     }
@@ -1805,7 +2064,7 @@ html, body {
     }
 
     .medical-text {
-        font-size: 26px;
+        font-size: 40px;
         left: 15%;
         margin-top: 5%;
     }
@@ -2010,7 +2269,7 @@ html, body {
     }
 
     .medical-text {
-        font-size: 26px;
+        font-size: 40px;
         left: 15%;
         margin-top: 5%;
     }
@@ -2148,6 +2407,7 @@ html, body {
 }
 
 @media screen and (max-width: 360px) {
+
     .nav-link::after {
         width: 20%;
     }
@@ -2221,8 +2481,16 @@ html, body {
         right: 33%
     }
 
+    .media-width {
+        width: 85px !important;
+    }
+
+    .carousel-caption {
+        bottom: 250px;
+    }
+
     .medical-text {
-        font-size: 26px;
+        font-size: 40px;
         left: 15%;
         margin-top: 5%;
     }
@@ -2374,6 +2642,24 @@ html, body {
 }
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0;
+    }
+
+    .nav-active::after {
+        width: 65%;
+        left: 12px;
+    }
+
+    .nav-link {
+        margin: 0 10px;
+    }
+
+    .nav-item {
+        padding: 0px;
+    }
+
     .carousel-caption {
         bottom: 390px;
     }
@@ -2550,6 +2836,24 @@ html, body {
 
 
 @media screen and (max-width: 740px) and (orientation: landscape) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0;
+    }
+
+    .nav-active::after {
+        width: 8%;
+        left: 12px;
+    }
+
+    .nav-link {
+        margin: 0 7px;
+    }
+
+    .nav-item {
+        padding: 0px;
+    }
+
     .my-w-100 {
         width: 50% !important;
     }
@@ -2750,6 +3054,24 @@ html, body {
 }
 
 @media screen and (max-width: 736px) and (orientation: landscape) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0;
+    }
+
+    .nav-active::after {
+        width: 8%;
+        left: 12px;
+    }
+
+    .nav-link {
+        margin: 0 7px;
+    }
+
+    .nav-item {
+        padding: 0px;
+    }
+
     .carousel-caption {
         bottom: 200px;
     }
@@ -2960,6 +3282,24 @@ html, body {
 
 @media screen and (max-width: 731px) and (orientation: landscape) {
 
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0;
+    }
+
+    .nav-active::after {
+        width: 8%;
+        left: 12px;
+    }
+
+    .nav-link {
+        margin: 0 7px;
+    }
+
+    .nav-item {
+        padding: 0px;
+    }
+
     .select-control {
         width: 200px;
     }
@@ -3167,6 +3507,24 @@ html, body {
 }
 
 @media screen and (max-width: 667px) and (orientation: landscape) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0;
+    }
+
+    .nav-active::after {
+        width: 8%;
+        left: 12px;
+    }
+
+    .nav-link {
+        margin: 0 7px;
+    }
+
+    .nav-item {
+        padding: 0px;
+    }
+
     .my-w-100 {
         width: 50% !important;
     }
@@ -3363,6 +3721,26 @@ html, body {
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
+
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0;
+    }
+
+    .nav-active::after {
+        width: 8%;
+        left: 12px;
+    }
+
+    .nav-link {
+        margin: 0 7px;
+    }
+
+    .nav-item {
+        padding: 0px;
+    }
+
     .my-w-100 {
         width: 50% !important;
     }
