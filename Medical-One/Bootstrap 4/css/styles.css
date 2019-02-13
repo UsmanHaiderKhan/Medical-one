@@ -319,8 +319,7 @@ html, body {
 }
 
 .none-style {
-    margin-left: 11px;
-    text-align: left;
+    margin-left: -40px;
     list-style: none;
 }
 
@@ -421,7 +420,6 @@ html, body {
 .form-control:focus {
     color: #000;
     background-color: transparent;
-    border-color: none;
     outline: 0;
     box-shadow: none !important;
 }
