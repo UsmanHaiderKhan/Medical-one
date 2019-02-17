@@ -36,6 +36,107 @@ a > * {
     cursor: pointer;
     text-decoration: none !important;
 }
+/*=================== Slider Section Styling ===================*/
+.mySlides {
+    display: none
+}
+
+.slideshow-div {
+    overflow-x: hidden;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 94%;
+    width: auto;
+    padding: 14px 0;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 9%;
+}
+
+.next {
+    right: 79%;
+    border-radius: 3px 0 0 3px;
+}
+
+.text {
+    color: #f2f2f2;
+    position: absolute;
+    bottom: 132px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #191a1c;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 91%;
+    left: 11.95%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    opacity: 1;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}
 /*=================== Header Section Styling ===================*/
 html, body {
     margin: 0px;
@@ -1393,7 +1494,7 @@ html, body {
     }
 
     .media-margin-top-30 {
-        margin-top: 30px;
+        margin-top: 15px;
     }
 
     .medical-text {
@@ -1537,11 +1638,31 @@ html, body {
     }
 
     .media-slide-icons {
-        margin-top: 30px;
+        margin-top: 15px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .numbertext {
+        top: 87.8%;
+    }
+
+    .text {
+        bottom: 40px;
+    }
+
+    .next, .prev {
+        top: 93%;
+    }
+
+    .prev {
+        left: 9%;
+    }
+
+    .next {
+        right: 74%;
+    }
+
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 0 !important;
         padding-left: 0;
@@ -1631,7 +1752,7 @@ html, body {
     }
 
     .medical-text {
-        font-size: 30px;
+        font-size: 31px;
     }
 
     .desc-font-color {
@@ -1771,11 +1892,31 @@ html, body {
     }
 
     .media-slide-icons {
-        margin-top: 30px;
+        margin-top: 15px;
+    }
+
+    .mt-50 {
+        margin-top: -17px;
     }
 }
 
 @media screen and (max-width: 414px) {
+    .media-h-0 {
+        height: 0%;
+    }
+
+    .text {
+        bottom: 260px;
+    }
+
+    .next, .prev {
+        top: 90%;
+    }
+
+    .next {
+        right: 64%;
+    }
+
     .nav-active::after {
         width: 15%;
         left: 8px;
@@ -1862,7 +2003,7 @@ html, body {
 
     .medical-text {
         font-size: 40px;
-        left: 15%;
+        left: 8%;
         margin-top: 5%;
     }
 
@@ -2063,7 +2204,7 @@ html, body {
 
     .medical-text {
         font-size: 40px;
-        left: 15%;
+        left: 8%;
         margin-top: 5%;
     }
 
@@ -2268,7 +2409,7 @@ html, body {
 
     .medical-text {
         font-size: 40px;
-        left: 15%;
+        left: 8%;
         margin-top: 5%;
     }
 
@@ -2489,7 +2630,7 @@ html, body {
 
     .medical-text {
         font-size: 40px;
-        left: 15%;
+        left: 8%;
         margin-top: 5%;
     }
 
