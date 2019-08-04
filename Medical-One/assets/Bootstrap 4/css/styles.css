@@ -1184,10 +1184,17 @@ http://localhost:57222/assets/Images/Slider-Icons/chaker.png
 
 
 /*================ Media Query ===============*/
-@media screen and (max-width: 1540px)and (min-width:1441px) {
+@media screen and (max-width: 1540px) {
     .doc-img {
         left: 57%;
         margin-top: -0.6%;
+    }
+}
+
+@media screen and (max-width: 1441px) {
+    .doc-img {
+        left: 57%;
+        margin-top: 2%;
     }
 }
 
@@ -1429,7 +1436,7 @@ http://localhost:57222/assets/Images/Slider-Icons/chaker.png
     .doc-img {
         position: absolute;
         left: 61%;
-        margin-top: 7%;
+        margin-top: 11%;
     }
 
     .p-4 {
@@ -1462,13 +1469,24 @@ http://localhost:57222/assets/Images/Slider-Icons/chaker.png
         bottom: 0;
     }
 
+    .media-content-position {
+        bottom: 0;
+    }
+
+    .prev {
+        top: unset;
+        bottom: 0;
+    }
+
     .next {
+        top: unset;
+        bottom: 0;
         right: 66%;
     }
 
     .numbertext {
-        top: 92%;
-        left: 19%;
+        top: 94%;
+        left: 16%;
     }
 
     .nav-link {
@@ -1486,7 +1504,7 @@ http://localhost:57222/assets/Images/Slider-Icons/chaker.png
 
     .doc-img {
         left: 64%;
-        margin-top: 39%;
+        margin-top: 44%;
         right: 6%;
     }
 
@@ -1546,7 +1564,7 @@ http://localhost:57222/assets/Images/Slider-Icons/chaker.png
     }
 
     .medical-text {
-        font-size: 30px;
+        font-size: 36px;
     }
 
     .desc-font-color {
@@ -1749,9 +1767,9 @@ http://localhost:57222/assets/Images/Slider-Icons/chaker.png
         margin-top: 0%;
     }
 
-    doc-img {
+    .doc-img {
         left: 64%;
-        margin-top: 41.3%;
+        margin-top: 46%;
         right: 6%;
     }
 
@@ -2844,18 +2862,28 @@ http://localhost:57222/assets/Images/Slider-Icons/chaker.png
     }
 
     .doc-img {
-        margin-top: 0%;
+        margin-top: 3.5%;
     }
     /*.doc-img {
         margin-top: 3.6%;
     }*/
 }
 
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+    .media-mt-max {
+        margin-top: 19%;
+    }
+
+    .doc-img {
+        margin-top: 6.5%;
+    }
+}
+
 @media screen and (max-width: 1024px) and (orientation: landscape) {
     .doc-img {
         position: absolute;
         left: 61%;
-        margin-top: 7%;
+        margin-top: 11%;
     }
 
     .media-content-position {
