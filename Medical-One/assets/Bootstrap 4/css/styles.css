@@ -144,6 +144,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
+http://localhost:57222/assets/Images/Slider-Icons/chaker.png
 .bg-slide-img {
     background-image: url('../../Images/main-banner.png');
     background-position: center;
@@ -1186,7 +1187,7 @@ html, body {
 @media screen and (max-width: 1540px)and (min-width:1441px) {
     .doc-img {
         left: 57%;
-        margin-top: -3.7%;
+        margin-top: -0.6%;
     }
 }
 
